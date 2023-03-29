@@ -131,7 +131,7 @@
     },
     {
       "type": "Microsoft.Sql/servers/databases",
-      "apiVersion": "2021-02-01-preview",
+      "apiVersion": "2022-05-01-preview",
       "name": "[format('{0}/{1}', parameters('sqlserverName'), parameters('databaseName'))]",
       "location": "[resourceGroup().location]",
       "tags": {
@@ -150,7 +150,7 @@
     },
     {
       "type": "Microsoft.Sql/servers/firewallRules",
-      "apiVersion": "2021-02-01-preview",
+      "apiVersion": "2022-05-01-preview",
       "name": "[format('{0}/{1}', parameters('sqlserverName'), 'AllowAllWindowsAzureIps')]",
       "properties": {
         "endIpAddress": "0.0.0.0",
@@ -162,7 +162,7 @@
     },
     {
       "type": "Microsoft.Web/serverfarms",
-      "apiVersion": "2020-12-01",
+      "apiVersion": "2022-03-01",
       "name": "[parameters('hostingPlanName')]",
       "location": "[resourceGroup().location]",
       "tags": {
@@ -176,7 +176,7 @@
     {
       "type": "Microsoft.Web/sites",
       "name": "[parameters('webappname')]",
-      "apiVersion": "2020-12-01",
+      "apiVersion": "2022-03-01",
       "location": "[resourceGroup().location]",
       "dependsOn": [
         "[resourceId('Microsoft.Web/serverfarms', parameters('hostingPlanName'))]"
@@ -186,7 +186,7 @@
       },
       "resources": [
         {
-          "apiVersion": "2020-12-01",
+          "apiVersion": "2022-03-01",
           "name": "web",
           "type": "sourcecontrols",
           "dependsOn": [
@@ -234,7 +234,7 @@
       "type": "Microsoft.Web/sites",
       "kind": "api",
       "name": "[parameters('apiname')]",
-      "apiVersion": "2016-03-01",
+      "apiVersion": "2022-03-01",
       "location": "[resourceGroup().location]",
       "dependsOn": [
         "[resourceId('Microsoft.Web/serverfarms', parameters('hostingPlanName'))]",
@@ -246,7 +246,7 @@
       },
       "resources": [
         {
-          "apiVersion": "2016-03-01",
+          "apiVersion": "2022-03-01",
           "name": "web",
           "type": "sourcecontrols",
           "dependsOn": [

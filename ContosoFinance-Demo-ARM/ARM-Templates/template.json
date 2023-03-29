@@ -17,7 +17,7 @@
     },
     "ProjectName": {
       "type": "string",
-      "defaultValue": "SmithaCIaCSTraining",
+      "defaultValue": "CIaCSTraining",
       "metadata": {
         "description": "Select name Project, all reosuces will be deployed following the naming convention using this projectname"
       }
@@ -25,7 +25,7 @@
     },
     "hostingPlanName": {
       "type": "string",
-      "defaultValue": "SmithaCIaCSTraining-Plan",
+      "defaultValue": "CIaCSTraining-Plan",
       "metadata": {
         "description": "Select name for App Service Plan"
       }
@@ -33,7 +33,7 @@
 
     "webappname": {
       "type": "string",
-      "defaultValue": "SmithaCIaCSTraining-Site",
+      "defaultValue": "CIaCSTraining-Site",
       "metadata": {
         "description": "Select name for Web App"
       }
@@ -42,7 +42,7 @@
 
     "apiname": {
       "type": "string",
-      "defaultValue": "SmithaCIaCSTraining-Api",
+      "defaultValue": "CIaCSTraining-Api",
       "metadata": {
         "description": "Select name for API App"
       }
@@ -50,7 +50,7 @@
 
     "sqlserverName": {
       "type": "string",
-      "defaultValue": "SmithaCIaCSTraining-Sql",
+      "defaultValue": "CIaCSTraining-Sql",
       "metadata": {
         "description": "Select name for SQL Server"
       }
@@ -58,7 +58,7 @@
 
     "databaseName": {
       "type": "string",
-      "defaultValue": "smithaciacstrainingdb",
+      "defaultValue": "ciacstrainingdb",
       "metadata": {
         "description": "Select name for database"
       }

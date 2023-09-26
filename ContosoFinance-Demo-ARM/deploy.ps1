@@ -66,7 +66,7 @@ else{
 
 # Start the deployment from Remote Template 
 Write-Host "Starting deployment from Github Repo...";
-New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateUri $templateFileURI -TemplateParameterUri $parametersFileURI -Verbose;
+New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateUri $templateFilePath  -TemplateParameterUri $parametersFilePath -Verbose;
 
 # OR
 

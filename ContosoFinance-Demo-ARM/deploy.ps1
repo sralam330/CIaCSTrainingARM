@@ -10,8 +10,8 @@ $resourceGroupName = "SmithaCIaCS-rg"  #provide resource group name
 $resourceGroupLocation = "WestEurope"  #location
 
 # The below  file can be used if the templates are stored locally 
-$templateFilePath = "CIaCSTrainingARM-ARM\ARM-Templates\template.json"
-$parametersFilePath = "CIaCSTrainingARM-ARM\ARM-Templates\paramters.json"
+$templateFilePath = "../ARM-Templates/template.json"
+$parametersFilePath = "../ARM-Templates/paramters.json"
 
 # $templateFileURI = 'https://raw.githubusercontent.com/SmithaVerity/CIaCSTrainingARM/main/ContosoFinance-Demo-ARM/ARM-Templates/template.json'
 # $parametersFileURI = 'https://raw.githubusercontent.com/SmithaVerity/CIaCSTrainingARM/main/ContosoFinance-Demo-ARM/ARM-Templates/paramters.json'

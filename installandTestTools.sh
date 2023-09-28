@@ -5,5 +5,4 @@ sudo dpkg -i packages-microsoft-prod.deb
 sudo apt-get update
 sudo apt-get install -y powershell
 pwsh
-Import-Module ./arm-ttk.psd1
-Test-AzTemplate -TemplatePath /home/ubuntu/CIaCSTrainingARM/ContosoFinance-Demo-ARM/ARM-Templates/template.json
+
